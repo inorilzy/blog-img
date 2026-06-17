@@ -1,29 +1,31 @@
 # blog-img
 
-> Personal image bucket for blog posts and Markdown notes.
+> 个人博客和图床笔记的图片仓库。
 
-## Purpose
+[中文](README.md) | [English](README.en.md)
 
-This repository stores static images used by the owner's blog, notes, and documentation. It is not a reusable software project.
+## 用途
 
-## Structure
+本仓库存储博主博客、笔记和文档中用到的静态图片，不是一个可复用的软件项目。
+
+## 目录结构
 
 ```text
 blog-img/
-├── img/          # grouped image assets
-└── *.png / *.jpg # legacy root-level image assets
+├── img/          # 分组图片资源
+└── *.png / *.jpg # 兼容旧用的 root 层级图片
 ```
 
-## Usage
+## 使用说明
 
-Images are referenced directly from GitHub raw URLs or from blog content that points to this repository.
+图片通过 GitHub raw URL 或博客内容引用。不建议将此仓库当作有可用性保证的图片 CDN。
 
-## Notes
+## 注意事项
 
-- Do not treat this repository as an image CDN with availability guarantees.
-- Avoid deleting or renaming existing images unless all external references have been updated.
-- New images should preferably be grouped under `img/` instead of the repository root.
+- 不要删除或重命名已被外部引用的图片。
+- 新图片建议放在 `img/` 下，而不是仓库根目录。
+- 图片版权可能因来源而异，引用前请确认许可。
 
 ## License
 
-No license file is currently included. Image rights may vary by source; do not reuse assets without permission.
+当前仓库尚未包含明确的 license 文件。图片版权因来源而异，未经许可请勿复用。
